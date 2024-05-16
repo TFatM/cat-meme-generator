@@ -14,11 +14,15 @@
   </div>
   <input class="top-input" type="text" placeholder="Top text">
   <input class="bottom-input" type="text" placeholder="Bottom text">
-  <button class="generate-btn" type="button" onclick="generateMeme()">Generate meme</button>
-  <button class="download-btn" type="button" onclick="downloadMeme()">Download meme</button>
+  <div class="button-container">
+    <button class="change-btn" type="button" onclick="changeText()">Change Text</button>
+    <button class="download-btn" type="button" onclick="downloadMeme()">Download meme</button>
+    <button class="next-btn" type="button" onclick="nextImage()">Next image</button>
+    <button class="prev-btn" type="button" onclick="previousImage()">Previous image</button>
+  </div>
 
 
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="./script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 body{
-  background: #CDE8E5;
+  background-image: url(/images/CatBackground.jpg);
+  background-repeat: repeat;
+  background-size: 450px;
   text-align: center;
 }
 
@@ -9,6 +11,7 @@ body{
 
 .container{
   position: relative;
+  margin-top: 20px;
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -30,17 +33,28 @@ body{
   font-weight: bold;
   color: #EEF7FF;
   text-shadow: 1px 1px 2px #000;
+  text-transform: uppercase;
   position: absolute;
   margin: 0;
   width: 100%;
 }
 
 .image{
-  max-width: 100%;
+  max-width: 400px;
+  width: 100%;
 }
 
-.generate-btn,
-.download-btn{
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 16px;
+}
+
+.change-btn,
+.download-btn,
+.next-btn,
+.prev-btn{
   background-color: #7AB2B2;
   color: #EEF7FF;
   border: none;
@@ -53,7 +67,29 @@ body{
   transition: background-color .3s;
 }
 
-.generate-btn:hover,
-.download-btn:hover{
+.change-btn:hover,
+.download-btn:hover,
+.next-btn:hover,
+.prev-btn:hover{
   background-color: #4D869C;
+}
+
+.top-input{
+  margin-right: 5px;
+}
+
+.bottom-input{
+  margin-left: 5px;
+}
+
+.top-input,
+.bottom-input{
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid #4D869C;
+  background-color: #EEF7FF;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 8px;
 }
